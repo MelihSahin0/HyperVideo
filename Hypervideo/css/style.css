@@ -1,0 +1,72 @@
+/* Von hier bis zum markierten bereich nichts abändern, sonst funktioniert das ganze nicht mehr*/
+.content-container {
+    display: flex;
+    justify-content: center;
+}
+
+#video-container {
+    position: relative;
+    height: 450px;
+    width: 800px;
+}
+
+video {
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 10); /* Video Shadow */
+}
+
+.overlay-rectangle {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#paintingCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* placing of cards*/
+    gap: 1rem; /* Gap between cards*/
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Card shadow*/
+    border-radius: 20px; 
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.05); /*Hover effect for card*/
+}
+
+.card-img-top {
+    margin-top: 1rem;
+    width: 100%;
+    height: 200px; 
+    object-fit: contain; /*Verhindert verzerrungen des bildes*/
+    object-position: center; /* Platziert das Bild mittig im*/
+}
+
+.cards-container {
+    margin: 2rem;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.card-text {
+    margin-bottom: 0.5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem; /* Größere Schriftgröße für den Titel */
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold; /* Macht den Titel fett */
+    color: #333; /* Dunkle Farbe für bessere Lesbarkeit */
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+

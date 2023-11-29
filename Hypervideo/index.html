@@ -1,0 +1,29 @@
+<!-- Struktur und Container nicht abändern bitte-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hypervideo</title>
+    <!-- Bootstrap CSS Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/Hypervideo/css/style.css">
+</head>
+<body>
+    <h1>Hypervideo - Louvre Tour Paris</h1>
+    <div class="content-container">
+        <div id="video-container">
+            <video id="video-louvre-tour" width="800px"; height="450px"; controls>
+                <source src="/Hypervideo/videos/louvre-tour.mp4" type="video/mp4">
+                Your browser does not support this video format.
+            </video>
+        </div>
+    </div>
+
+    <div class="cards-container">
+        <h2><i>Painting Information</i></h2>
+        <div id="paintingCards" class="row">
+        </div>    
+    </div>
+
+    <script src="/Hypervideo/js/frame-paintings.js"></script>
+</body>
+</html>
