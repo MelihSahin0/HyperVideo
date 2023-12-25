@@ -70,3 +70,21 @@ h2 {
     margin-bottom: 1rem;
 }
 
+/* needed when you use createRect.js */
+.mouse-line {
+    position: absolute;
+    background-color: red;
+    pointer-events: none;
+    z-index: 1000; /* Set a higher z-index to ensure it's on top */
+}
+
+.horizontal-line {
+    height: 1px;
+    width: 100%;
+}
+
+.vertical-line {
+    height: 100%;
+    width: 1px;
+}
+

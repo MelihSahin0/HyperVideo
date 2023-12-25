@@ -62,10 +62,11 @@ function createPaintingCard(painting, index) {
 }
 
 function handleVideoTimeUpdate(paintings, video) {
-    const currentTime = Math.floor(video.currentTime);
+    const currentTime = video.currentTime;
+    document.getElementById("time").innerHTML = "Time: " + currentTime.toFixed(1);
     paintings.forEach((painting, index) => {
         const rect = document.getElementById(`painting-${index}`);
-        const currentCoordinate = painting.timeCoordinates.find(coordinate => coordinate.time === currentTime);
+        const currentCoordinate = painting.timeCoordinates.find(coordinate => coordinate.time === parseFloat(currentTime.toFixed(1)));
 
         if (currentCoordinate) {
             const { x, y, width, height } = currentCoordinate;
