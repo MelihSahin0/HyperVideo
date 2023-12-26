@@ -61,9 +61,15 @@ function createPaintingCard(painting, index) {
     return col;
 }
 
+let currentTime = 0;
 function handleVideoTimeUpdate(paintings, video) {
-    const currentTime = video.currentTime;
-    document.getElementById("time").innerHTML = "Time: " + currentTime.toFixed(1);
+    currentTime = video.currentTime;
+    
+    //needed when createRect.js is used
+    if (document.getElementById("time")!== null){
+        document.getElementById("time").innerHTML = "Time: " + currentTime.toFixed(1);
+    }
+
     paintings.forEach((painting, index) => {
         const rect = document.getElementById(`painting-${index}`);
         const currentCoordinate = painting.timeCoordinates.find(coordinate => coordinate.time === parseFloat(currentTime.toFixed(1)));
