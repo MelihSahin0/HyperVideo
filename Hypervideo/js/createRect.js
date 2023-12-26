@@ -18,6 +18,7 @@ $(document).ready(function() {
         verticalLine.css("top", 0);
 
         document.getElementById("position").innerHTML =  "Mouse X: " + mouseX + ", Mouse Y: " + mouseY;
+        document.getElementById("time").innerHTML = "Time: " + currentTime.toFixed(1);
     });
 
     let clicked = false;
@@ -35,7 +36,7 @@ $(document).ready(function() {
                 let mouseX2 = e.pageX - $(this).offset().left;
                 let mouseY2 = e.pageY - $(this).offset().top;
             
-                let json = "{\"time\": " + document.getElementById("time").innerHTML.replace("Time: ", "") + ", \"x\": " + mouseX + ", \"y\": " + mouseY +
+                let json = "{\"time\": " + currentTime.toFixed(1) + ", \"x\": " + mouseX + ", \"y\": " + mouseY +
                 ", \"width\" :" + (mouseX2 - mouseX) + ", \"height\": " + (mouseY2 - mouseY) + "},";
 
                 document.getElementById("widthAndHeight").innerHTML =  json;
