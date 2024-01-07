@@ -1,51 +1,99 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="landingPageCss.css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <body>
 
-</head>
+    <header>
 
-<body>
-  <div class="bg-white">
-    <header class="absolute inset-x-0 top-0 z-50">
-      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5"> HyperVideo </a>
+      <!-- First container -->
+      <div class="containerAni container_solid">
+        <div class="title_wrapper">
+          <h1>Louvre-toure de paris</h1>
         </div>
-        <div class="flex lg:hidden">
-          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-            <span class="sr-only">Open main menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </button>
+      </div>
+    
+      <!-- Second container -->
+      <div class="containerAni container_image" aria-hidden="true">
+        <div class="title_wrapper">
+          <h1>Louvre-toure de paris</h1>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12 items-center">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Get started</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">About us</a>
-          <a href="#"
-            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Other
-            Videos</a>
-        </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
-              aria-hidden="true">&rarr;</span></a>
-        </div>
-      </nav>
+      </div>
+    
     </header>
+    
+    <div class="bg-white">
+      <header class="absolute inset-x-0 top-0 z-50">
+        <nav
+          class="flex items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5"> HyperVideo </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12 items-center">
+            <a
+              href="/Hypervideo/hypervideos.html"
+              class="text-sm font-semibold leading-6 text-gray-900"
+              >Get started</a
+            >
+            <a href="/Hypervideo/About.html" class="text-sm font-semibold leading-6 text-gray-900"
+              >About us</a
+            >
+            <a
+              href="#"
+              class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >Other Videos</a
+            >
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+              >Log in <span aria-hidden="true">&rarr;</span></a
+            >
+          </div>
+        </nav>
+      </header>
 
-    <div class="relative isolate px-6 pt-14 lg:px-8">
-      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        aria-hidden="true">
+      <div class="relative isolate px-6 pt-14 lg:px-8">
         <div
-          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-          style="
+          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true"
+        >
+          <div
+            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="
               clip-path: polygon(
                 74.1% 44.1%,
                 100% 61.6%,
@@ -64,293 +112,461 @@
                 76.1% 97.7%,
                 74.1% 44.1%
               );
-            "></div>
-      </div>
-      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-        <div class="text-center">
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Louvre-toure de paris
-          </h1>
-          <p class="mt-6 text-lg leading-8 text-gray-600">
-            Visit the art museuem digitaly with our inovative hyper-video
-            giving you the ability to interact with the paintings real-time
-          </p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="#"
-              class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
-              started</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
-                aria-hidden="true">→</span></a>
+            "
+          ></div>
+        </div>
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div class="text-center">
+            <h1
+              class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+            >
+              Louvre-toure de paris
+            </h1>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              Visit the art museuem digitaly with our inovative hyper-video
+              giving you the ability to interact with the paintings real-time
+            </p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="/Hypervideo/hypervideos.html"
+                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Get started</a
+              >
+              <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+                >Other Video's <span aria-hidden="true">→</span></a
+              >
+            </div>
+            <div class="hidden sm:mb-8 sm:flex sm:justify-center mt-10">
+              <div
+                class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+              >
+                <a style="z-index: 999;" href="#theMuseum" class="font-semibold text-indigo-600"
+                  ><span class="absolute inset-0" aria-hidden="true"></span>The
+                  museum •
+                </a>
+                <a href="#mostFamous" class="font-semibold text-indigo-600"
+                  ><span class="absolute inset-0" aria-hidden="true"></span>Most
+                  famous pieces •
+                </a>
+                <a href="#pricing" class="font-semibold text-indigo-600"
+                  ><span class="absolute inset-0" aria-hidden="true"></span
+                  >Pricing •
+                </a>
+                <a href="#location" class="font-semibold text-indigo-600"
+                  ><span class="absolute inset-0" aria-hidden="true"></span
+                  >Location
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white py-24 sm:py-32">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <dl
+              class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3"
+            >
+              <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <dt class="text-base leading-7 text-gray-600">
+                  visitors every day
+                </dt>
+                <dd
+                  class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+                >
+                  30,000
+                </dd>
+              </div>
+              <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <dt class="text-base leading-7 text-gray-600">
+                  works on display
+                </dt>
+                <dd
+                  class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+                >
+                  35,000
+                </dd>
+              </div>
+              <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <dt class="text-base leading-7 text-gray-600">
+                  art museum in the world
+                </dt>
+                <dd
+                  class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+                >
+                  #1
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
       </div>
-      <div class="bg-white py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-              <dt class="text-base leading-7 text-gray-600">visitors every day</dt>
-              <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">30,000</dd>
-            </div>
-            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-              <dt class="text-base leading-7 text-gray-600">works on display</dt>
-              <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">35,000</dd>
-            </div>
-            <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-              <dt class="text-base leading-7 text-gray-600">art museum in the world</dt>
-              <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">#1</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-
     </div>
-  </div>
-  <div
-    class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
-    <div>
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        The museuem
-      </h2>
-      <p class="mt-4 text-gray-500">
-        Located in the center of paris the structure is a magnificent looking
-        building in itself, with its pyramid looking shape it sure looks
-        unique. Inside you are greeted with the finest paintigs earth has to
-        offer with a luxurius ambiente making this experience truly
-        unforgetfull.
-      </p>
-
-      <dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-        <div class="border-t border-gray-200 pt-4">
-          <dt class="font-medium text-gray-900">Origin</dt>
-          <dd class="mt-2 text-sm text-gray-500">
-            First extablished: 10. August 1793
-            <br />
-            Rebuild: 1. April 1989
-          </dd>
-        </div>
-        <div class="border-t border-gray-200 pt-4">
-          <dt class="font-medium text-gray-900">Paintings</dt>
-          <dd class="mt-2 text-sm text-gray-500">
-            The museuem contains over 35.000 works from all over the world
-          </dd>
-        </div>
-        <div class="border-t border-gray-200 pt-4">
-          <dt class="font-medium text-gray-900">Price</dt>
-          <dd class="mt-2 text-sm text-gray-500">From 10€ to 20€</dd>
-        </div>
-        <div class="border-t border-gray-200 pt-4">
-          <dt class="font-medium text-gray-900">Location</dt>
-          <dd class="mt-2 text-sm text-gray-500">
-            Center of paris cant unsee it
-          </dd>
-        </div>
-      </dl>
-    </div>
-    <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-      <img src="./images/Image1.webp"
-        alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-        class="rounded-lg bg-gray-100" style="width: 450px; height: 300px;" />
-      <img src="./images/louvre-inside-big.jpg" alt="Top down view of walnut card tray with embedded magnets and card groove."
-        class="rounded-lg bg-gray-100" style="width: 450px; height:300px;" />
-      <img src="./images/inside.jpeg" alt="Side of walnut card tray with card groove and recessed card area."
-        class="rounded-lg bg-gray-100" style="width: 450px; height: 300px;" />
-      <img src="./images/image2.jpg" alt="Walnut card tray filled with cards and card angled in dedicated groove."
-        class="rounded-lg bg-gray-100" style="width: 450px; height: 300px;" />
-    </div>
-  </div>
-  <div class="bg-white py-24 sm:py-32">
-    <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-
-      <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-        <li>
-          <div class="flex items-center gap-x-6">
-            <img class="h-20 w-20 rounded-md" style="width: 250px; height: 250px;" src="./images/Blessing_Christ.jpeg"
-              alt="" />
-            <div>
-              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                Blessing Christ
-              </h3>
-              <p class="text-sm font-semibold leading-6 text-indigo-600">
-                1776
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="flex items-center gap-x-6">
-            <img class="h-20 w-20 rounded-md" style="width: 250px; height: 250px;" src="./images/Christ_at_Column.jpeg"
-              alt="" />
-            <div>
-              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                Christ at Column
-              </h3>
-              <p class="text-sm font-semibold leading-6 text-indigo-600">
-                1776
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="flex items-center gap-x-6">
-            <img class="h-20 w-20 rounded-md" style="width: 250px; height: 250px;"
-              src="./images/IMG-The-Virgin-And-Child.jpeg" alt="" />
-            <div>
-              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                The virgin and child
-              </h3>
-              <p class="text-sm font-semibold leading-6 text-indigo-600">
-                1776
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="flex items-center gap-x-6">
-            <img class="h-20 w-20 rounded-md" style="width: 250px; height: 250px;" src="./images/Maria_Lactans.jpeg"
-              alt="" />
-            <div>
-              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                Maria Lactans
-              </h3>
-              <p class="text-sm font-semibold leading-6 text-indigo-600">
-                1776
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="flex items-center gap-x-6">
-            <img class="h-20 w-20 rounded-md" style="width: 250px; height: 250px;" src="./images/Portrait_of_a_Man.jpeg"
-              alt="" />
-            <div>
-              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                Portrait of a man
-              </h3>
-              <p class="text-sm font-semibold leading-6 text-indigo-600">
-                1776
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="flex items-center gap-x-6">
-            <img class="h-20 w-20 rounded-md" style="width: 250px; height: 250px;" src="./images/Ritratto_d_uoma.jpeg"
-              alt="" />
-            <div>
-              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                Ritratto d uoma
-              </h3>
-              <p class="text-sm font-semibold leading-6 text-indigo-600">
-                1776
-              </p>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <div class="max-w-2xl">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Most famous pieces
+    <div
+      class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
+    >
+      <div>
+        <h2
+          id="theMuseum"
+          class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+        >
+          The museum
         </h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600">
-          Here are some of the most well known pieces in the louvre museuem
-          paris.
+        <p class="mt-4 text-gray-500">
+          Located in the center of paris the structure is a magnificent looking
+          building in itself, with its pyramid looking shape it sure looks
+          unique. Inside you are greeted with the finest paintigs earth has to
+          offer with a luxurius ambiente making this experience truly
+          unforgetfull.
         </p>
+
+        <dl
+          class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8"
+        >
+          <div class="border-t border-gray-200 pt-4">
+            <dt class="font-medium text-gray-900">Origin</dt>
+            <dd class="mt-2 text-sm text-gray-500">
+              First extablished: 10. August 1793
+              <br />
+              Rebuild: 1. April 1989
+            </dd>
+          </div>
+          <div class="border-t border-gray-200 pt-4">
+            <dt class="font-medium text-gray-900">Paintings</dt>
+            <dd class="mt-2 text-sm text-gray-500">
+              The museuem contains over 35.000 works from all over the world
+            </dd>
+          </div>
+          <div class="border-t border-gray-200 pt-4">
+            <dt class="font-medium text-gray-900">Price</dt>
+            <dd class="mt-2 text-sm text-gray-500">From 10€ to 20€</dd>
+          </div>
+          <div class="border-t border-gray-200 pt-4">
+            <dt class="font-medium text-gray-900">Location</dt>
+            <dd class="mt-2 text-sm text-gray-500">
+              Center of paris cant unsee it
+            </dd>
+          </div>
+        </dl>
+      </div>
+      <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+        <img
+          src="./images/Image1.webp"
+          class="rounded-lg bg-gray-100"
+          style="width: 450px; height: 300px"
+        />
+        <img
+          src="./images/louvre-inside-big.jpg"
+          class="rounded-lg bg-gray-100"
+          style="width: 450px; height: 300px"
+        />
+        <img
+          src="./images/inside.jpeg"
+          class="rounded-lg bg-gray-100"
+          style="width: 450px; height: 300px"
+        />
+        <img
+          src="./images/image2.jpg"
+          class="rounded-lg bg-gray-100"
+          style="width: 450px; height: 300px"
+        />
       </div>
     </div>
-  </div <div class="mx-auto max-w-2xl lg:py-56">
-  <div class="text-center">
-    <h3 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-      Pricing
-    </h3>
-  </div>
-  </div>
-
-  <div class="bg-gray-100 py-12 flex items-center justify-center">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-      style="margin-left: 18%; margin-right: 18%; margin-top: 60px;">
-
-      <!-- Pricing Card 1 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
-        <div class="p-1 bg-blue-200">
-        </div>
-        <div class="p-8">
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Online ticket</h3>
-          <p class="text-gray-600 mb-6">Full access, one person, 1 day</p>
-          <p class="text-4xl font-bold text-gray-800 mb-6">€17</p>
-
-        </div>
-        <div class="p-4">
-          <button
-            class="w-full bg-blue-500 text-white rounded-full px-4 py-2 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
-            Buy ticket
-          </button>
-        </div>
-      </div>
-
-      <!-- Pricing Card 2 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
-        <div class="p-1 bg-green-200">
-        </div>
-        <div class="p-8">
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Museum ticket</h3>
-          <p class="text-gray-600 mb-6">Full access, one person, 1 day</p>
-          <p class="text-4xl font-bold text-gray-800 mb-6">€15</p>
-
-        </div>
-        <div class="p-4">
-          <button
-            class="w-full bg-green-500 text-white rounded-full px-4 py-2 hover:bg-green-700 focus:outline-none focus:shadow-outline-green active:bg-green-800">
-            Buy ticket
-          </button>
-        </div>
-      </div>
-
-      <!-- Pricing Card 3 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
-        <div class="p-1 bg-purple-200">
-        </div>
-        <div class="p-8">
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Tour ticket</h3>
-          <p class="text-gray-600 mb-6">For large-scale enterprises</p>
-          <p class="text-4xl font-bold text-gray-800 mb-6">€12</p>
-
-        </div>
-        <div class="p-4">
-          <button
-            class="w-full bg-purple-500 text-white rounded-full px-4 py-2 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple active:bg-purple-800">
-            Buy ticket
-          </button>
+    <div class="bg-white py-24 sm:py-32">
+      <div
+        class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3"
+      >
+        <ul
+          id="mostFamous"
+          role="list"
+          class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+        >
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-20 w-20 rounded-md"
+                style="width: 250px; height: 250px"
+                src="./images/Blessing_Christ.jpeg"
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  Blessing Christ
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  1776
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-20 w-20 rounded-md"
+                style="width: 250px; height: 250px"
+                src="./images/Christ_at_Column.jpeg"
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  Christ at Column
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  1776
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-20 w-20 rounded-md"
+                style="width: 250px; height: 250px"
+                src="./images/IMG-The-Virgin-And-Child.jpeg"
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  The virgin and child
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  1776
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-20 w-20 rounded-md"
+                style="width: 250px; height: 250px"
+                src="./images/Maria_Lactans.jpeg"
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  Maria Lactans
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  1776
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-20 w-20 rounded-md"
+                style="width: 250px; height: 250px"
+                src="./images/Portrait_of_a_Man.jpeg"
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  Portrait of a man
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  1776
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-20 w-20 rounded-md"
+                style="width: 250px; height: 250px"
+                src="./images/Ritratto_d_uoma.jpeg"
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  Ritratto d uoma
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  1776
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="max-w-2xl">
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Most famous pieces
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Here are some of the most well known pieces in the louvre museuem
+            paris. Many of these paintings are priceless and are not beeing sold
+            on auctions. "Blessing Chris" by Giovani stronzo for example has an estimated
+            value of 6.7 million dollars. For a more elaborate list of the paintigns ant their value
+            visit <a href="https://www.portraitflip.com/blog/paintings-in-louvre/" class="font-semibold text-indigo-600">portraitflip.</a>
+            All of the mentioned paintings are currently on display at the museum most of them
+            are in building room E1, the last 2 are in room A2.
+          </p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="mx-auto max-w-2xl sm:py-24">
     <div class="text-center">
       <h3 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-        Location
+        Pricing
       </h3>
     </div>
-  </div>
-  <div style="display: flex;
-  justify-content: center;
-  align-items: center; margin-bottom: 80px;" >
-    <div id="map" style="height: 500px; width: 60%; min-height: 200px; min-height: 200px;" class="rounded rounded-lg"></div>
-  </div>
 
-  <script>
-    // Initialize the map
-    var map = L.map("map").setView([48.8606111, 2.337644], 13); // Replace with your desired latitude and longitude
+    <div class="py-12 flex items-center justify-center">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        style="margin-left: 18%; margin-right: 18%; margin-top: 60px"
+      >
+        <!-- Pricing Card 1 -->
+        <div
+          id="pricing"
+          class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105"
+        >
+          <div class="p-1 bg-blue-200"></div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Online ticket</h3>
+            <p class="text-gray-600 mb-6">Full access, one person, 1 day</p>
+            <p class="text-4xl font-bold text-gray-800 mb-6">€17</p>
+          </div>
+          <div class="p-4">
+            <button id="btn1"
+              class="w-full bg-blue-500 text-white rounded-full px-4 py-2 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
+            >
+              Buy ticket
+            </button>
+          </div>
+        </div>
 
-    // Add a tile layer from OpenStreetMap
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    }).addTo(map);
+        <!-- Pricing Card 2 -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105"
+        >
+          <div class="p-1 bg-blue-200"></div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Museum ticket</h3>
+            <p class="text-gray-600 mb-6">Full access, one person, 1 day</p>
+            <p class="text-4xl font-bold text-gray-800 mb-6">€15</p>
+          </div>
+          <div class="p-4">
+            <button id="btn2"
+              class="w-full bg-blue-500 text-white rounded-full px-4 py-2 hover:bg-green-700 focus:outline-none focus:shadow-outline-green active:bg-blue-800"
+            >
+              Buy ticket
+            </button>
+          </div>
+        </div>
 
-    // Add a marker to the map
-    L.marker([48.8606111, 2.337644]).addTo(map) // Replace with your desired latitude and longitude
+        <!-- Pricing Card 3 -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105"
+        >
+          <div class="p-1 bg-blue-200"></div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Tour ticket</h3>
+            <p class="text-gray-600 mb-6">For large-scale enterprises, 1 day</p>
+            <p class="text-4xl font-bold text-gray-800 mb-6">€12</p>
+          </div>
+          <div class="p-4">
+            <button id="btn3"
+              class="w-full bg-blue-500 text-white rounded-full px-4 py-2 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple active:bg-blue-800"
+            >
+              Buy ticket
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto max-w-2xl sm:py-24">
+      <div class="text-center">
+        <h3
+          id="location"
+          class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+        >
+          Location
+        </h3>
+      </div>
+    </div>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+      "
+    >
+      <div
+        id="map"
+        style="height: 500px; width: 60%; min-height: 200px; min-height: 200px"
+        class="rounded rounded-lg"
+      ></div>
+    </div>
+
+    <script>
+      // Initialize the map
+      var map = L.map("map").setView([48.8606111, 2.337644], 13); // Replace with your desired latitude and longitude
+
+      // Add a tile layer from OpenStreetMap
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      // Add a marker to the map
+      L.marker([48.8606111, 2.337644])
+        .addTo(map) // Replace with your desired latitude and longitude
         .bindPopup("The museum!")
         .openPopup();
-</script>
-</body>
-
+    </script>
+  </body>
+  <footer class="px-4 divide-y dark:bg-gray-800 dark:text-gray-100">
+    <div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+      <div class="lg:w-1/3">
+        <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
+          <div class="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400">
+            <img src="images/logo.png">
+          </div>
+          <span class="self-center text-2xl font-semibold">HyperVideo</span>
+        </a>
+      </div>
+     
+       
+        
+        <div class="space-y-3">
+          <div class="uppercase dark:text-gray-50">Find us on GitHub</div>
+          <div class="flex justify-start space-x-3">
+            <a rel="noopener noreferrer" href="#" title="Facebook" class="flex items-center p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-6 text-sm text-center dark:text-gray-400">Made by Muhi, Melih and Amir</div>
+  </footer>
 </html>
+
+<script>
+  document.getElementById('btn1').addEventListener('click', function() {
+      window.location.href = 'https://www.louvre.fr/en/visit/hours-admission#ticket-prices';
+  });
+  document.getElementById('btn2').addEventListener('click', function() {
+      window.location.href = 'https://www.louvre.fr/en/visit/hours-admission#ticket-prices';
+  });
+  document.getElementById('btn3').addEventListener('click', function() {
+      window.location.href = 'https://www.louvre.fr/en/visit/hours-admission#ticket-prices';
+  });
+</script>
