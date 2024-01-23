@@ -20,7 +20,6 @@ $(document).ready(function() {
         document.getElementById("position").innerHTML =  "Mouse X: " + mouseX + ", Mouse Y: " + mouseY;
         document.getElementById("time").innerHTML = "Time: " + currentTime.toFixed(1);
     });
-
     let clicked = false;
     let mouseX;
     let mouseY;
