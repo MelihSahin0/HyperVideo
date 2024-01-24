@@ -54,7 +54,7 @@ header {
 
 .container_solid .title_wrapper h1 {
   /* the text background */
-  background: url("images/image2.jpg");
+  background: url("/Hypervideo/images/image2.jpg");
   background-size: 100vw auto;
   background-position: center;
   
@@ -70,7 +70,7 @@ header {
 
 .container_image {
   /* Grab a free image from unsplash */
-  background-image: url("images/image2.jpg");
+  background-image: url("/Hypervideo/images/image2.jpg");
   background-size:100vw auto;
   background-position: center;
   background-attachment: fixed;
